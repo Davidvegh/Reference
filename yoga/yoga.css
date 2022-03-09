@@ -15,6 +15,9 @@ body{
     justify-content: center;
     background-image: linear-gradient(#E5989B, #fde4cf);
     height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .header_main img{
@@ -34,11 +37,15 @@ body{
     margin-left: 20px;
     margin-right: 20px;
     font-size: 1.2rem;
-    color: black;
+    background-image: linear-gradient(to bottom, #28262b 0%, #9b6e77 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .header_main ul li:hover, .header_main ul li a:hover{
-    color: #5a5e64;
     transform: scale(1.1);
     transition: transform 200ms ease-in-out;
 }
